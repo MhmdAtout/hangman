@@ -1,5 +1,6 @@
 const status = document.getElementById('status');
-const word = document.getElementById('word');
+const random_word = document.getElementById('random_word');
+const input = document.getElementById('input');
 const new_game = document.getElementById('new_game');
 const submit = document.getElementById('submit');
 
