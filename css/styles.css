@@ -20,6 +20,12 @@ button{
     cursor: pointer;
 }
 
+input{
+    width: 400px;
+    height: 40px;
+    padding: 20px;
+}
+
 .hide{
     display: none;
 }
