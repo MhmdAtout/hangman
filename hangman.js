@@ -1,7 +1,8 @@
 const status = document.getElementById('status');
+status.innerText = "Lets have fun :)"
 const random_word = document.getElementById('random_word');
 const input = document.getElementById('input');
-const new_game = document.getElementById('new_game');
+const new_game_btn = document.getElementById('new_game_btn');
 const submit = document.getElementById('submit');
 
 const Hangman = {
