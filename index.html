@@ -13,10 +13,27 @@
 </head>
 <body>
 
-    <div class="page">
+    <div class="page flex jc-center ai-center">
 
+        <div class="game-board flex column jc-se ai-center">
+            <div class="title">
+                <h1>Hangeman Game</h1>
+            </div>
+            <div class="status">
+                <p id="status"></p>
+            </div>
+            <div class="word">
+                <h1 id="word"></h1>
+            </div>
+            <div class="input">
+                <input type="text" id="input" placeholder="Enter a letter">
+            </div>
+            <div class="buttons">
+                <button id="New Game">New Game</button>
+                <button id="Submit">Submit</button>
+            </div>
+        </div>
 
-        
     </div>
     
     <script src="./hangman.js"></script>
