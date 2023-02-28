@@ -91,3 +91,11 @@ function lose() {
         rules.gameOff = true;
     }
 }
+
+new_game_btn.addEventListener("click", () => {
+    startGame();
+    submit_word_div.classList.remove("hide");
+    input_div.classList.remove("hide");
+    submit_btn.classList.remove("hide");
+    status.innerText = `The word is made up of ${rules.word.length} letters`;
+});
