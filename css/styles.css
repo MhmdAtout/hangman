@@ -23,8 +23,15 @@ button {
 input {
     width: 100px;
     height: 100px;
-    padding: ;
+    padding: 18px;
+    border: 5px solid black;
     border-radius: 50%;
+    outline: none;
+    font-family: "Press Start 2P";
+}
+input::placeholder {
+    font-family: "Press Start 2P";
+    text-align: center;
 }
 
 .hide {
