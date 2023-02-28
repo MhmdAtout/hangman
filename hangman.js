@@ -39,6 +39,8 @@ function startGame() {
 }
 
 function guess(input) {
+    random_word.innerText = "";
+
     for (let i = 0; i < rules.word.length; i++) {
         if (rules.trueLetters.includes(rules.word[i])) {
             random_word.innerHTML += ` ${rules.word[i]} `;
