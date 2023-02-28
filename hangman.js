@@ -37,3 +37,12 @@ function startGame() {
         hangman.words[Math.floor(Math.random() * hangman.words.length)];
     rules.trueLetters = [];
 }
+
+function win() {
+    let foundAllLetters = true;
+    for (let i = 0; i < rules.word.length; i++) {
+        if (!rules.trueLetters.includes(rules.word[i])) {
+            foundAllLetters = false;
+        }
+    }
+}
