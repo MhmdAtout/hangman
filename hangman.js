@@ -39,6 +39,14 @@ function startGame() {
 }
 
 function guess(input) {
+    if (rules.gameOff) {
+        status.innerText = `Please start a new game :)`;
+    } else if (rules.trueLetters.includes(input)) {
+        status.innerText = "You've already tried it :) Try another one";
+    } else {
+        rules.trueLetters.push(input);
+    }
+
     random_word.innerText = "";
 
     for (let i = 0; i < rules.word.length; i++) {
