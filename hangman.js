@@ -45,6 +45,16 @@ function guess(input) {
         status.innerText = "You've already tried it :) Try another one";
     } else {
         rules.trueLetters.push(input);
+        if (rules.word.includes(input)) {
+            status.innerText = "Correct guess :)";
+            win();
+        } else {
+            rules.remainingGuesses--;
+            console.log(rules.remainingGuesses);
+            status.innerText = `Incorrect guess. You have ${rules.remainingGuesses} guesses remaining ;(`;
+            console.log(rules.remainingGuesses);
+            lose();
+        }
     }
 
     random_word.innerText = "";
