@@ -29,3 +29,11 @@ const rules = {
     word: "",
     trueLetters: [],
 };
+
+function startGame() {
+    rules.gameOff = false;
+    rules.remainingGuesses = 5;
+    rules.word =
+        hangman.words[Math.floor(Math.random() * hangman.words.length)];
+    rules.trueLetters = [];
+}
