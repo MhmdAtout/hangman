@@ -41,6 +41,10 @@ function startGame() {
 function guess(input) {
     if (rules.gameOff) {
         status.innerText = `Please start a new game :)`;
+    } else if (input.length === 0 || input === " ") {
+        status.innerText = "Please enter a letter";
+    } else if (input.length > 1) {
+        status.innerText = "Please enter only one letter";
     } else if (rules.trueLetters.includes(input)) {
         status.innerText = "You've already tried it :) Try another one";
     } else {
