@@ -98,4 +98,12 @@ new_game_btn.addEventListener("click", () => {
     input_div.classList.remove("hide");
     submit_btn.classList.remove("hide");
     status.innerText = `The word is made up of ${rules.word.length} letters`;
+
+    for (let i = 0; i < rules.word.length; i++) {
+        if (rules.trueLetters.includes(rules.word[i])) {
+            random_word.innerHTML += rules.word[i];
+        } else {
+            random_word.innerHTML += " _ ";
+        }
+    }
 });
