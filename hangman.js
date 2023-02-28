@@ -109,3 +109,7 @@ new_game_btn.addEventListener("click", () => {
         }
     }
 });
+
+submit_btn.addEventListener("click", () => {
+    guess(input.value);
+});
