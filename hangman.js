@@ -50,3 +50,10 @@ function win() {
         rules.gameOff = true;
     }
 }
+
+function lose() {
+    if (rules.remainingGuesses === 0) {
+        status.innerText = `Sorry, you lost :( \n The word was ${rules.word}.`;
+        rules.gameOff = true;
+    }
+}
