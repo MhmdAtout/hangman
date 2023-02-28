@@ -7,3 +7,7 @@
 -   Javascript
 -   HTML
 -   CSS
+
+### Take a look ;)
+
+<img src="./assets/images/hangman-ss.png">
