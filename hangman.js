@@ -38,7 +38,15 @@ function startGame() {
     rules.trueLetters = [];
 }
 
-function guess(input) {}
+function guess(input) {
+    for (let i = 0; i < rules.word.length; i++) {
+        if (rules.trueLetters.includes(rules.word[i])) {
+            random_word.innerHTML += ` ${rules.word[i]} `;
+        } else {
+            random_word.innerHTML += " _ ";
+        }
+    }
+}
 
 function win() {
     let foundAllLetters = true;
