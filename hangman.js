@@ -45,4 +45,8 @@ function win() {
             foundAllLetters = false;
         }
     }
+    if (foundAllLetters) {
+        status.innerText = "Congratulations, you won :)";
+        rules.gameOff = true;
+    }
 }
