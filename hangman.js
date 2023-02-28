@@ -38,6 +38,8 @@ function startGame() {
     rules.trueLetters = [];
 }
 
+function guess(input) {}
+
 function win() {
     let foundAllLetters = true;
     for (let i = 0; i < rules.word.length; i++) {
